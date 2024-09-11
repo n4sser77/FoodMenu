@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="AppData.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser query pragmas" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2652"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Dishes" custom_title="0" dock_id="11" table="4,6:mainDishes"/><table title="Dishes" custom_title="0" dock_id="1" table="4,6:mainDishes"/><dock_state state="000000ff00000000fd00000001000000020000043b000002aefc0100000001fc000000000000043b0000011800fffffffa00000000010000000bfb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000011800fffffffb000000160064006f0063006b00420072006f00770073006500320000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500330000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500340000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500350000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500360000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500370000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500380000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500390000000000ffffffff0000000000000000fb000000180064006f0063006b00420072006f007700730065003100300000000000ffffffff0000000000000000fb000000180064006f0063006b00420072006f007700730065003100310100000000ffffffff0000011800ffffff000002580000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="DishIngredients" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="47"/><column index="2" value="82"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Dishes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="93"/><column index="3" value="300"/><column index="4" value="36"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Ingredients" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="101"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- Insert more data into Dishes table
+INSERT INTO Dishes (Id, Name, Price, ImageUrl) VALUES
+(3, 'Pepperoni Pizza', 8.00, 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Pepperoni_pizza.jpg'),
+(4, 'Caesar Salad', 5.50, 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Caesar_salad_%281%29.jpg');
+
+-- Insert more data into Ingredients table
+INSERT INTO Ingredients (Id, Name) VALUES
+(5, 'Pepperoni'),
+(6, 'Lettuce'),
+(7, 'Caesar Dressing'),
+(8, 'Parmesan Cheese');
+
+-- Insert more data into DishIngredients table
+INSERT INTO DishIngredients (DishId, IngredientId) VALUES
+(3, 1), -- Tomato Sauce
+(3, 2), -- Mozzarella
+(3, 5), -- Pepperoni
+(4, 6), -- Lettuce
+(4, 7), -- Caesar Dressing
+(4, 8); -- Parmesan Cheese
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

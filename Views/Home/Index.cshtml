@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome </h1>
+    <h1> Running from @Environment.OSVersion</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="flex-column">
+        <p>Check out our menu</p>
+        <a class="btn btn-outline-primary"  asp-controller="Menu" asp-action="Index" style="font-size: 30px; min-width: 250px; padding: 10px;">Menu</a>
+    </div>
+    
+</div>
